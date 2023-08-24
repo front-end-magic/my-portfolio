@@ -18,7 +18,7 @@
     height: 90vh;
     width: 100vw;
     background-image:
-      /* url(../images/1.jpg), */
+      url(../images/pink.png),
     linear-gradient(90deg, var(--color2) 0%, var(--color6)2%, var(--color2) 5%, var(--color2) 20%,
      var(--color2) 80%, var(--color2) 95%, var(--color6)98%, var(--color2) 100%);
     background-blend-mode: overlay;  

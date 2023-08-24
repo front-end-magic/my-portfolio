@@ -136,7 +136,7 @@
  }
  
  .orange{
-  background-color: orange;
+  background-color: orangered;
  }
  
  .pink{
@@ -151,4 +151,7 @@
  }
  .yellow{
   background-color: yellow;
+ }
+ .dark{
+  background-color: #333;
  }
