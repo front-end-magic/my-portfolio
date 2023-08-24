@@ -216,6 +216,17 @@ footer{
     line-height: 30px;
   
    
+} 
+  .cube-back .img .big-text{
+    font-size: 2em;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.055);
+    line-height: 50px;
+  
+   
 }
+.robot-container:hover{
+    -webkit-box-reflect: left -300px linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 0));
 
+}
 }
