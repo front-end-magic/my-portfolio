@@ -35,7 +35,7 @@
     height: 120vh;
     width: 100%;
     background: inherit;
-    background-image: url(../images/logo.jpg),
+    background-image: url(../images/logo.png),
     linear-gradient(90deg, var(--color9),
     var(--color10), var(--color9));
     ;

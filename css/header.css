@@ -37,11 +37,15 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    
  }
 .wrapper {
     z-index: 100;
     height: 300px;
     width: 300px;
+    -webkit-box-reflect: left -50px linear-gradient(to bottom, rgba(0, 0, 0, 0.082), rgba(0, 0, 0, 0.123));
+    filter: drop-shadow(5px 5px 40px var(--color5));
+  
 }
 
 .cube-container {
@@ -53,6 +57,7 @@
     perspective-origin: 50%;
     opacity: 0.9;
     justify-self: left;
+  
 }
 
 .image-cube {
@@ -61,6 +66,7 @@
     transform-style: preserve-3d;
     position: relative;
     animation: spin 20s linear infinite;
+  
 }
 
 .image-cube:hover {
@@ -80,9 +86,40 @@
     position: absolute;
 }
 
-img {
+.cube-side .img {
     width: 100%;
     height: 100%;
+    background-color: var(--color8);
+    background: linear-gradient(90deg, rgb(12, 12, 12) 0%, var(--color2), 
+    rgb(31, 31, 34) 100%);
+    background-size: 100% 100%;
+    box-shadow: 2px 2px 10px black inset,
+        -2px -2px 10px black inset;
+    background-blend-mode: screen;
+    font-size: 16px;
+    display: grid;
+    text-align: center;
+    text-decoration: double;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(250, 250, 250);
+  
+}
+.cube-side .img .big-text{
+    font-size: 3em;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.055);
+    
+    background: var(--color8);
+    background: linear-gradient(90deg,  var(--color1) 0%,  var(--color10) 12%, 
+    var(--color8) 30%,  var(--color1) 40%,  var(--color10) 50%, 
+    var(--color8) 60%, var(--color1) 70%,  var(--color10) 80%, 
+    var(--color8)100% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    filter: drop-shadow(5px 5px 4px var(--color5));
+    color: rgba(0, 0, 0, 0.137);
+    height: fit-content;
+   
 }
 
 .cube-front {
@@ -124,14 +161,18 @@ img {
     z-index: 100;
    
    }
+.robot-container:hover{
+    -webkit-box-reflect: left 0px linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 0));
 
+}
 .robot-wrapper {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0%;
     right: 0%;
-
+    filter: drop-shadow(5px 5px 4px var(--color5));
+  
 }
 
 .face-wrapper {
@@ -195,15 +236,16 @@ img {
     top: 70%;
     width: 50%;
     height: 15%;
-    background-color: #66e9e9;
+    background: var(--color2) ;
     border-bottom-left-radius: 70px;
     border-bottom-right-radius: 70px;
     transition: 0.5s;
-    box-shadow: 2px 2px 10px rgb(106, 204, 183),
+    box-shadow: 2px 2px 20px var(--color2),
         -2px -2px 10px rgb(16, 27, 27),
         0 0 5px black inset;
     z-index: 2;
-
+    filter: blur(0.4);
+  
 
 }
 
@@ -267,10 +309,10 @@ img {
     width: 30px;
     height: 30px;
     display: block;
-    background: rgb(204, 242, 247);
+    background: var(--color1);
     margin: 0 15px;
     border-radius: 50%;
-    box-shadow: 2px 2px 5px rgb(51, 95, 88) inset;
+    box-shadow: 2px 2px 5px var(--color2) inset;
     filter: blur(0.4);
     display: flex;
     justify-content: right;
@@ -288,9 +330,9 @@ img {
     width: 50%;
     height: 50%;
     border-radius: 50%;
-    background-color: #66e9e9;
-    box-shadow: 2px 2px 10px rgb(106, 204, 183),
-        -2px -2px 10px rgb(59, 219, 211);
+    background-color: var(--color2);
+    box-shadow: 2px 2px 10px var(--color2),
+        -2px -2px 10px var(--color2);
 }
 
 .antenna {
