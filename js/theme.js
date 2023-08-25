@@ -8,6 +8,9 @@ const purple = document.querySelector(".purple");
 const teal = document.querySelector(".teal");
 const yellow = document.querySelector(".yellow");
 const dark = document.querySelector(".dark");
+const white = document.querySelector(".white");
+
+
 blue.addEventListener('click',()=>{
     themeStyle.href = 'css/blue.css'; 
 } )
@@ -34,4 +37,7 @@ yellow.addEventListener('click',()=>{
 } )
 dark.addEventListener('click',()=>{
     themeStyle.href = 'css/dark.css'; 
+} )
+white.addEventListener('click',()=>{
+    themeStyle.href = 'css/white.css'; 
 } )
