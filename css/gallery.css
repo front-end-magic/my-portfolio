@@ -1,25 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 .gallery {
-    /* overflow: hidden; */
     background-size: 100% 100%;
-    /* background-image: url(../images/logo.jpg),linear-gradient(90deg, rgba(0, 0, 0, 0.514), rgba(25, 3, 148, 0.555),rgba(0, 0, 0, 0.548));
-    ;
-    background-blend-mode: overlay; */
     color: var(--color2);
-    height: fit-content;
-    width: 100%;
-   display: grid;
     color: rgb(214, 254, 255);
     padding-top: 20px;
     position: relative;
-    /* background: url(../images/wave2.png); */
     z-index: 2;
-    /* background: var(--color9); */
-    /* background: var(--color9)2f; */
-    grid-row: 5/6;
-    margin-bottom: 100px;
-}
+    }
 
 .gallery-container {
     height: 90vh;
